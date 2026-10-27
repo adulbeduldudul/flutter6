@@ -17,7 +17,15 @@ class LayoutRulesExample extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Tiga Aturan Layout Flutter'),
       ),
-      body: MyPages2(),
+      body: SingleChildScrollView(
+    child: Column(
+    children: const [
+      MyPages1(),
+      // MyPages2(),
+      MyPages3(),
+    ],
+  ),
+),
    );
  }
 }
